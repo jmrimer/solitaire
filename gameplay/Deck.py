@@ -23,3 +23,6 @@ class Deck:
         for suit in Suit:
             for rank in range(1, 13 + 1):
                 self.cards.append(Card(suit, rank))
+
+    def shuffle(self):
+        np.random.shuffle(self.cards)
